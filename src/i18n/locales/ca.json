@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "services": "Serveis",
+    "about": "Nosaltres",
+    "contact": "Contacta'ns",
+    "back": "Tornar"
+  },
+  "hero": {
+    "badge": "Des d'Andorra",
+    "headline": "Construïm i portem<br />les teves idees a producció.",
+    "subheading": "Disseny, marca i enginyeria de producte digital. Del concepte a producció, sense soroll.",
+    "ctaPrimary": "Parlem",
+    "ctaSecondary": "Què fem"
+  },
+  "services": {
+    "label": "Serveis",
+    "title": "El teu producte, una realitat.",
+    "description": "Del primer esbós fins a producció. Ens encarreguem de tot el procés perquè tu et puguis centrar en el negoci.",
+    "items": [
+      {
+        "title": "Branding i Identitat",
+        "description": "Naming, identitat visual i sistema de marca. Coherència i criteri des del primer dia."
+      },
+      {
+        "title": "Disseny de Producte",
+        "description": "UX, UI, sistemes de disseny i prototips. Interfícies clares, sense complicacions."
+      },
+      {
+        "title": "Desenvolupament Web",
+        "description": "Enginyeria full-stack amb tecnologies actuals. React, Next.js, Node — rendiment i estructura sòlida."
+      },
+      {
+        "title": "Cloud i Infraestructura",
+        "description": "GCP, AWS, CI/CD i monitoratge. Sistemes estables i que aguanten creixement."
+      },
+      {
+        "title": "Integració d'IA",
+        "description": "Agents LLM, IA conversacional i automatitzacions útils. Menys hype, més aplicació real."
+      },
+      {
+        "title": "Estratègia i Consultoria",
+        "description": "Estratègia de producte i auditories tècniques. Decidir bé abans de construir."
+      }
+    ]
+  },
+  "story": {
+    "quote": "Els bons productes neixen <strong>d’idees clares i feina ben feta</strong>. Sense artificis, sense excessos — només criteri, constància i resultats.",
+    "attribution": "— Nord Studio, est. 2024 · Andorra",
+    "values": [
+      {
+        "num": "01",
+        "title": "Fem que passi",
+        "description": "No fem presentacions buides. Construïm i entreguem producte funcionant."
+      },
+      {
+        "num": "02",
+        "title": "Amb criteri propi",
+        "description": "Tenim opinió i l’exercim. Les decisions clares al principi eviten problemes després."
+      },
+      {
+        "num": "03",
+        "title": "Pensat per durar",
+        "description": "Arquitectures sólides i estàndards exigents. El que fem avui ha de continuar funcionant demà."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vols començar?",
+    "description": "Explica’ns què tens al cap. Ho mirem plegats.",
+    "button": "Comencem"
+  },
+  "contact": {
+    "badge": "Acceptem nous projectes",
+    "heading": "Construïm-ho<br />junts.",
+    "description": "Explica’ns el teu projecte i et responem en menys de 48 hores. Sense discursos comercials.",
+    "originLabel": "Fet a Andorra",
+    "originText": "Des d’Andorra — petit país, estàndards alts."
+  },
+  "form": {
+    "emailLabel": "Email de l'empresa",
+    "emailPlaceholder": "Adreça de correu",
+    "nameLabel": "El teu nom",
+    "namePlaceholder": "Joan Garcia",
+    "phoneLabel": "Telèfon",
+    "phoneOptional": "(Opcional)",
+    "phonePlaceholder": "+376 123 456",
+    "websiteLabel": "Web de l'empresa",
+    "websitePlaceholder": "https://latevaempresa.com",
+    "budgetLabel": "Rang de pressupost",
+    "budgetPlaceholder": "Selecciona un rang",
+    "budgetOptions": [
+      { "value": "<10k", "label": "< 10.000 €" },
+      { "value": "10k-25k", "label": "10.000 € – 25.000 €" },
+      { "value": "25k-50k", "label": "25.000 € – 50.000 €" },
+      { "value": "50k-100k", "label": "50.000 € – 100.000 €" },
+      { "value": ">100k", "label": "> 100.000 €" }
+    ],
+    "interestLabel": "Què necessites?",
+    "interestPlaceholder": "Selecciona un servei",
+    "interestOptions": [
+      { "value": "branding", "label": "Branding i Identitat" },
+      { "value": "design", "label": "Disseny de Producte" },
+      { "value": "development", "label": "Desenvolupament Web" },
+      { "value": "infrastructure", "label": "Cloud i Infraestructura" },
+      { "value": "ai", "label": "Integració d'IA" },
+      { "value": "strategy", "label": "Estratègia i Consultoria" },
+      { "value": "full", "label": "Producte complet" }
+    ],
+    "messageLabel": "Explica'ns el teu projecte",
+    "messagePlaceholder": "Què estàs construint? Quin problema vols resoldre?",
+    "submit": "Enviar",
+    "sending": "Enviant...",
+    "sent": "Enviat — et contactarem aviat.",
+    "error": "Hi ha hagut un error — torna-ho a provar"
+  },
+  "footer": {
+    "copyright": "© 2026 Nord Studio · Andorra"
+  },
+  "meta": {
+    "title": "Nord Studio · Producte Digital des d'Andorra",
+    "description": "Disseny, marca i enginyeria de producte digital amb criteri i estructura."
+  }
+}

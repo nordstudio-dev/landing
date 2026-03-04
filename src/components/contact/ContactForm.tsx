@@ -1,4 +1,5 @@
 import { useState, useRef, type FormEvent } from 'react';
+import { useI18n } from '../../i18n';
 
 const CONTACT_EMAIL = 'info@nordstudio.dev';
 
@@ -7,6 +8,7 @@ type FormStatus = 'idle' | 'sending' | 'sent' | 'error';
 export function ContactForm() {
   const [status, setStatus] = useState<FormStatus>('idle');
   const formRef = useRef<HTMLFormElement>(null);
+  const { t } = useI18n();
 
   const isDisabled = status === 'sending' || status === 'sent';
 
@@ -54,22 +56,29 @@ export function ContactForm() {
     }
   }
 
+  const statusLabels: Record<FormStatus, string> = {
+    idle: t.form.submit,
+    sending: t.form.sending,
+    sent: t.form.sent,
+    error: t.form.error,
+  };
+
   return (
     <form ref={formRef} className="form-animate" onSubmit={handleSubmit}>
       <div className="form-group">
-        <label className="form-label">Company email</label>
-        <input type="email" className="form-input" placeholder="Email address" name="email" required disabled={isDisabled} />
+        <label className="form-label">{t.form.emailLabel}</label>
+        <input type="email" className="form-input" placeholder={t.form.emailPlaceholder} name="email" required disabled={isDisabled} />
       </div>
 
       <div className="form-group">
         <div className="form-row">
           <div>
-            <label className="form-label">Your name</label>
-            <input type="text" className="form-input" placeholder="Jane Smith" name="name" required disabled={isDisabled} />
+            <label className="form-label">{t.form.nameLabel}</label>
+            <input type="text" className="form-input" placeholder={t.form.namePlaceholder} name="name" required disabled={isDisabled} />
           </div>
           <div>
-            <label className="form-label">Phone <span className="optional">(Optional)</span></label>
-            <input type="tel" className="form-input" placeholder="+376 123 456" name="phone" disabled={isDisabled} />
+            <label className="form-label">{t.form.phoneLabel} <span className="optional">{t.form.phoneOptional}</span></label>
+            <input type="tel" className="form-input" placeholder={t.form.phonePlaceholder} name="phone" disabled={isDisabled} />
           </div>
         </div>
       </div>
@@ -77,40 +86,34 @@ export function ContactForm() {
       <div className="form-group">
         <div className="form-row">
           <div>
-            <label className="form-label">Company website</label>
-            <input type="url" className="form-input" placeholder="https://yourcompany.com" name="website" disabled={isDisabled} />
+            <label className="form-label">{t.form.websiteLabel}</label>
+            <input type="url" className="form-input" placeholder={t.form.websitePlaceholder} name="website" disabled={isDisabled} />
           </div>
           <div>
-            <label className="form-label">Budget range</label>
+            <label className="form-label">{t.form.budgetLabel}</label>
             <select className="form-select" name="budget" defaultValue="" disabled={isDisabled}>
-              <option value="" disabled>Select a range</option>
-              <option value="<10k">&lt; €10,000</option>
-              <option value="10k-25k">€10,000 – €25,000</option>
-              <option value="25k-50k">€25,000 – €50,000</option>
-              <option value="50k-100k">€50,000 – €100,000</option>
-              <option value=">100k">&gt; €100,000</option>
+              <option value="" disabled>{t.form.budgetPlaceholder}</option>
+              {t.form.budgetOptions.map((opt) => (
+                <option key={opt.value} value={opt.value}>{opt.label}</option>
+              ))}
             </select>
           </div>
         </div>
       </div>
 
       <div className="form-group">
-        <label className="form-label">What are you looking for?</label>
+        <label className="form-label">{t.form.interestLabel}</label>
         <select className="form-select" name="interest" defaultValue="" disabled={isDisabled}>
-          <option value="" disabled>Select a service</option>
-          <option value="branding">Branding &amp; Identity</option>
-          <option value="design">Product Design</option>
-          <option value="development">Web Development</option>
-          <option value="infrastructure">Cloud &amp; Infrastructure</option>
-          <option value="ai">AI Integration</option>
-          <option value="strategy">Strategy &amp; Consulting</option>
-          <option value="full">Full product build</option>
+          <option value="" disabled>{t.form.interestPlaceholder}</option>
+          {t.form.interestOptions.map((opt) => (
+            <option key={opt.value} value={opt.value}>{opt.label}</option>
+          ))}
         </select>
       </div>
 
       <div className="form-group">
-        <label className="form-label">Tell us about your project</label>
-        <textarea className="form-input" placeholder="What are you building? What problem are you solving?" name="message" required disabled={isDisabled} />
+        <label className="form-label">{t.form.messageLabel}</label>
+        <textarea className="form-input" placeholder={t.form.messagePlaceholder} name="message" required disabled={isDisabled} />
       </div>
 
       <button
@@ -118,7 +121,7 @@ export function ContactForm() {
         className={`form-submit${status === 'sent' ? ' sent' : ''}${status === 'error' ? ' error' : ''}`}
         disabled={isDisabled}
       >
-        {{ idle: 'Submit', sending: 'Sending...', sent: "Sent — we'll be in touch!", error: 'Error — try again' }[status]}
+        {statusLabels[status]}
       </button>
     </form>
   );

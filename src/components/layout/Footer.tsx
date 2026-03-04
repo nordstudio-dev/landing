@@ -1,7 +1,11 @@
+import { useI18n } from '../../i18n';
+
 export function Footer() {
+  const { t } = useI18n();
+
   return (
     <div className="bento-footer">
-      <div className="footer-left">&copy; 2026 Nord Studio &middot; Andorra</div>
+      <div className="footer-left">{t.footer.copyright}</div>
       <div className="footer-right">
         <a href="mailto:info@nordstudio.dev" className="footer-link">info@nordstudio.dev</a>
       </div>

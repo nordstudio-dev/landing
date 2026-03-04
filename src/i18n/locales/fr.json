@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "back": "Retour"
+  },
+  "hero": {
+    "badge": "Basés en Andorre",
+    "headline": "Nous construisons et mettons en production<br />vos idées.",
+    "subheading": "Design, marque et ingénierie produit. Du concept à la mise en production, sans superflu.",
+    "ctaPrimary": "Parlons",
+    "ctaSecondary": "Ce que nous faisons"
+  },
+  "services": {
+    "label": "Services",
+    "title": "Votre produit, opérationnel.",
+    "description": "Du premier croquis à la production. Nous prenons en charge l’ensemble du processus pour que vous puissiez vous concentrer sur votre activité.",
+    "items": [
+      {
+        "title": "Branding & Identité",
+        "description": "Naming, identité visuelle et système de marque. Cohérence et exigence dès le départ."
+      },
+      {
+        "title": "Design Produit",
+        "description": "UX, UI, design systems et prototypage. Des interfaces claires, sans complexité inutile."
+      },
+      {
+        "title": "Développement Web",
+        "description": "Ingénierie full-stack avec des technologies modernes. React, Next.js, Node — performance et structure solide."
+      },
+      {
+        "title": "Cloud & Infrastructure",
+        "description": "GCP, AWS, CI/CD et monitoring. Des systèmes stables capables d’évoluer."
+      },
+      {
+        "title": "Intégration IA",
+        "description": "Agents LLM, IA conversationnelle et automatisations concrètes. Moins de buzz, plus d’usage réel."
+      },
+      {
+        "title": "Stratégie & Conseil",
+        "description": "Stratégie produit et audits techniques. Décider correctement avant de construire."
+      }
+    ]
+  },
+  "story": {
+    "quote": "Les bons produits naissent <strong>d’idées claires et d’un travail bien fait</strong>. Pas d’artifices, pas d’excès — juste de la rigueur, de la constance et des résultats.",
+    "attribution": "— Nord Studio, est. 2024 · Andorre",
+    "values": [
+      {
+        "num": "01",
+        "title": "On construit vraiment",
+        "description": "Pas de présentations vides. Nous livrons des produits qui fonctionnent."
+      },
+      {
+        "num": "02",
+        "title": "Avec conviction",
+        "description": "Nous avons un point de vue et nous l’assumons. Les décisions claires au départ évitent des problèmes plus tard."
+      },
+      {
+        "num": "03",
+        "title": "Pensé pour durer",
+        "description": "Architecture propre et standards exigeants. Ce que nous faisons aujourd’hui doit encore fonctionner demain."
+      }
+    ]
+  },
+  "cta": {
+    "title": "On commence ?",
+    "description": "Parlez-nous de votre projet. On regarde ça ensemble.",
+    "button": "Commencer"
+  },
+  "contact": {
+    "badge": "Nouveaux projets ouverts",
+    "heading": "Construisons<br />ensemble.",
+    "description": "Parlez-nous de votre projet et nous vous répondons sous 48 heures. Pas de discours commercial.",
+    "originLabel": "Fait en Andorre",
+    "originText": "Depuis l’Andorre — petit pays, standards élevés."
+  },
+  "form": {
+    "emailLabel": "Email professionnel",
+    "emailPlaceholder": "Adresse email",
+    "nameLabel": "Votre nom",
+    "namePlaceholder": "Jean Dupont",
+    "phoneLabel": "Téléphone",
+    "phoneOptional": "(Optionnel)",
+    "phonePlaceholder": "+376 123 456",
+    "websiteLabel": "Site web",
+    "websitePlaceholder": "https://votreentreprise.com",
+    "budgetLabel": "Budget estimatif",
+    "budgetPlaceholder": "Sélectionnez une fourchette",
+    "budgetOptions": [
+      { "value": "<10k", "label": "< 10 000 €" },
+      { "value": "10k-25k", "label": "10 000 € – 25 000 €" },
+      { "value": "25k-50k", "label": "25 000 € – 50 000 €" },
+      { "value": "50k-100k", "label": "50 000 € – 100 000 €" },
+      { "value": ">100k", "label": "> 100 000 €" }
+    ],
+    "interestLabel": "De quoi avez-vous besoin ?",
+    "interestPlaceholder": "Sélectionnez un service",
+    "interestOptions": [
+      { "value": "branding", "label": "Branding & Identité" },
+      { "value": "design", "label": "Design Produit" },
+      { "value": "development", "label": "Développement Web" },
+      { "value": "infrastructure", "label": "Cloud & Infrastructure" },
+      { "value": "ai", "label": "Intégration IA" },
+      { "value": "strategy", "label": "Stratégie & Conseil" },
+      { "value": "full", "label": "Produit complet" }
+    ],
+    "messageLabel": "Parlez-nous de votre projet",
+    "messagePlaceholder": "Que construisez-vous ? Quel problème résolvez-vous ?",
+    "submit": "Envoyer",
+    "sending": "Envoi...",
+    "sent": "Envoyé — nous revenons vers vous rapidement.",
+    "error": "Erreur — veuillez réessayer"
+  },
+  "footer": {
+    "copyright": "© 2026 Nord Studio · Andorre"
+  },
+  "meta": {
+    "title": "Nord Studio · Produit digital depuis l’Andorre",
+    "description": "Design, marque et ingénierie produit avec rigueur et structure."
+  }
+}

@@ -1,11 +1,13 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useDecorativeGrid } from '../../hooks/useDecorativeGrid';
+import { useI18n } from '../../i18n';
 import { ArrowIcon } from '../shared/ArrowIcon';
 
 export function Hero() {
   const gridRef = useRef<HTMLDivElement>(null);
   const { verticals, horizontals } = useDecorativeGrid(gridRef);
+  const { t } = useI18n();
 
   return (
     <div className="bento-hero">
@@ -24,21 +26,19 @@ export function Hero() {
 
       <div className="hero-badge">
         <span className="hero-badge-dot" />
-        Based in Andorra
+        {t.hero.badge}
       </div>
 
-      <h1>Build and deploy<br />your ideas.</h1>
+      <h1 dangerouslySetInnerHTML={{ __html: t.hero.headline }} />
 
-      <p className="hero-sub">
-        We design, brand, and engineer digital products from concept to production. Strategy that ships.
-      </p>
+      <p className="hero-sub">{t.hero.subheading}</p>
 
       <div className="hero-actions">
         <Link to="/contact" className="btn-primary">
-          Get in touch
+          {t.hero.ctaPrimary}
           <ArrowIcon />
         </Link>
-        <a href="#services" className="btn-secondary">What we do</a>
+        <a href="#services" className="btn-secondary">{t.hero.ctaSecondary}</a>
       </div>
     </div>
   );
