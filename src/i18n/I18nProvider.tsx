@@ -1,11 +1,9 @@
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import type { ReactNode } from 'react';
+import { useState, useEffect, useCallback, type ReactNode } from 'react';
+import { I18nContext, type Locale, type Translations } from './useI18n';
+
 import en from './locales/en.json';
 import ca from './locales/ca.json';
 import fr from './locales/fr.json';
-
-export type Locale = 'en' | 'ca' | 'fr';
-export type Translations = typeof en;
 
 const locales: Record<Locale, Translations> = { en, ca, fr };
 
@@ -23,14 +21,6 @@ function detectLocale(): Locale {
 
   return 'en';
 }
-
-interface I18nContextValue {
-  locale: Locale;
-  setLocale: (l: Locale) => void;
-  t: Translations;
-}
-
-const I18nContext = createContext<I18nContextValue | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(detectLocale);
@@ -53,10 +43,4 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       {children}
     </I18nContext.Provider>
   );
-}
-
-export function useI18n(): I18nContextValue {
-  const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error('useI18n must be used within I18nProvider');
-  return ctx;
 }
