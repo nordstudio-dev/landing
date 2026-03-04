@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --color-bg: #FAFAFA;
+  --color-surface: #f5f5f5;
+  --color-white: #ffffff;
+  --color-border: #ebebeb;
+  --color-border-strong: #d4d4d4;
+  --color-text: #0a0a0a;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #999999;
+  --color-accent: #0a0a0a;
+  --color-accent-hover: #171717;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-grid-line: #e5e5e5;
+  --color-plus: #b0b0b0;
+
+  /* Typography */
+  --font-sans: 'Geist', -apple-system, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'SF Mono', monospace;
+
+  /* Spacing / Grid */
+  --grid-max: 1120px;
+  --grid-gap-top: 2rem;
+  --cell-size: 93px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-full: 100px;
+
+  /* Transitions */
+  --transition-fast: 0.15s;
+  --transition-normal: 0.2s;
+}

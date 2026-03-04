@@ -1,0 +1,16 @@
+/* ——— BENTO PAGE LAYOUT ——— */
+.bento-page {
+  position: relative;
+  max-width: var(--grid-max);
+  margin: 0 auto;
+  padding-top: var(--grid-gap-top);
+}
+
+.bento-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: var(--grid-max);
+}
+
