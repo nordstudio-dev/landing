@@ -38,7 +38,9 @@ export function Hero() {
           {t.hero.ctaPrimary}
           <ArrowIcon />
         </Link>
-        <a href="#services" className="btn-secondary">{t.hero.ctaSecondary}</a>
+        <a href="#services" className="btn-secondary">
+          {t.hero.ctaSecondary}
+        </a>
       </div>
     </div>
   );

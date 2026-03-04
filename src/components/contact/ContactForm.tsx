@@ -25,7 +25,7 @@ export function ContactForm() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
+          Accept: 'application/json',
         },
         body: JSON.stringify({
           email: formData.get('email'),
@@ -67,18 +67,40 @@ export function ContactForm() {
     <form ref={formRef} className="form-animate" onSubmit={handleSubmit}>
       <div className="form-group">
         <label className="form-label">{t.form.emailLabel}</label>
-        <input type="email" className="form-input" placeholder={t.form.emailPlaceholder} name="email" required disabled={isDisabled} />
+        <input
+          type="email"
+          className="form-input"
+          placeholder={t.form.emailPlaceholder}
+          name="email"
+          required
+          disabled={isDisabled}
+        />
       </div>
 
       <div className="form-group">
         <div className="form-row">
           <div>
             <label className="form-label">{t.form.nameLabel}</label>
-            <input type="text" className="form-input" placeholder={t.form.namePlaceholder} name="name" required disabled={isDisabled} />
+            <input
+              type="text"
+              className="form-input"
+              placeholder={t.form.namePlaceholder}
+              name="name"
+              required
+              disabled={isDisabled}
+            />
           </div>
           <div>
-            <label className="form-label">{t.form.phoneLabel} <span className="optional">{t.form.phoneOptional}</span></label>
-            <input type="tel" className="form-input" placeholder={t.form.phonePlaceholder} name="phone" disabled={isDisabled} />
+            <label className="form-label">
+              {t.form.phoneLabel} <span className="optional">{t.form.phoneOptional}</span>
+            </label>
+            <input
+              type="tel"
+              className="form-input"
+              placeholder={t.form.phonePlaceholder}
+              name="phone"
+              disabled={isDisabled}
+            />
           </div>
         </div>
       </div>
@@ -87,14 +109,24 @@ export function ContactForm() {
         <div className="form-row">
           <div>
             <label className="form-label">{t.form.websiteLabel}</label>
-            <input type="url" className="form-input" placeholder={t.form.websitePlaceholder} name="website" disabled={isDisabled} />
+            <input
+              type="url"
+              className="form-input"
+              placeholder={t.form.websitePlaceholder}
+              name="website"
+              disabled={isDisabled}
+            />
           </div>
           <div>
             <label className="form-label">{t.form.budgetLabel}</label>
             <select className="form-select" name="budget" defaultValue="" disabled={isDisabled}>
-              <option value="" disabled>{t.form.budgetPlaceholder}</option>
-              {t.form.budgetOptions.map((opt) => (
-                <option key={opt.value} value={opt.value}>{opt.label}</option>
+              <option value="" disabled>
+                {t.form.budgetPlaceholder}
+              </option>
+              {t.form.budgetOptions.map(opt => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
               ))}
             </select>
           </div>
@@ -104,16 +136,26 @@ export function ContactForm() {
       <div className="form-group">
         <label className="form-label">{t.form.interestLabel}</label>
         <select className="form-select" name="interest" defaultValue="" disabled={isDisabled}>
-          <option value="" disabled>{t.form.interestPlaceholder}</option>
-          {t.form.interestOptions.map((opt) => (
-            <option key={opt.value} value={opt.value}>{opt.label}</option>
+          <option value="" disabled>
+            {t.form.interestPlaceholder}
+          </option>
+          {t.form.interestOptions.map(opt => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
           ))}
         </select>
       </div>
 
       <div className="form-group">
         <label className="form-label">{t.form.messageLabel}</label>
-        <textarea className="form-input" placeholder={t.form.messagePlaceholder} name="message" required disabled={isDisabled} />
+        <textarea
+          className="form-input"
+          placeholder={t.form.messagePlaceholder}
+          name="message"
+          required
+          disabled={isDisabled}
+        />
       </div>
 
       <button

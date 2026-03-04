@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist
+build
+coverage
+.next
+out
+
+# Cache and temporary files
+.cache
+.turbo
+.vite
+*.log
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# Other
+public/assets
+*.min.js
+*.min.css

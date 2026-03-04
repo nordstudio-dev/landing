@@ -12,14 +12,22 @@ export function Navbar({ variant }: NavbarProps) {
   return (
     <nav>
       <div className="nav-inner">
-        <Link to="/" className="logo-text">Nord Studio</Link>
+        <Link to="/" className="logo-text">
+          Nord Studio
+        </Link>
 
         {variant === 'landing' ? (
           <div className="nav-links">
-            <a href="#services" className="nav-link">{t.nav.services}</a>
-            <a href="#about" className="nav-link">{t.nav.about}</a>
+            <a href="#services" className="nav-link">
+              {t.nav.services}
+            </a>
+            <a href="#about" className="nav-link">
+              {t.nav.about}
+            </a>
             <LangSwitcher />
-            <Link to="/contact" className="nav-cta">{t.nav.contact}</Link>
+            <Link to="/contact" className="nav-cta">
+              {t.nav.contact}
+            </Link>
           </div>
         ) : (
           <div className="nav-contact-right">

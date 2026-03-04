@@ -17,7 +17,7 @@ export function useDecorativeGrid(containerRef: RefObject<HTMLDivElement | null>
       if (!el) return;
 
       const cellSize = parseFloat(
-        getComputedStyle(document.documentElement).getPropertyValue('--cell-size')
+        getComputedStyle(document.documentElement).getPropertyValue('--cell-size'),
       );
       const colW = 100 / 12;
 
