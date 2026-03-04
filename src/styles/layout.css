@@ -13,4 +13,3 @@
   grid-template-columns: repeat(12, 1fr);
   max-width: var(--grid-max);
 }
-
