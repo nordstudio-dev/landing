@@ -15,7 +15,7 @@ export function StorySection() {
 
       <div className="bento-story-right fade-in" ref={rightRef}>
         <div className="values-list">
-          {t.story.values.map((v) => (
+          {t.story.values.map(v => (
             <div className="value-item" key={v.num}>
               <span className="value-num">{v.num}</span>
               <div className="value-text">

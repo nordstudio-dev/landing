@@ -1,19 +1,34 @@
 /* ——— KEYFRAMES ——— */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
 }
 
 /* ——— SCROLL FADE-IN ——— */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .fade-in.visible {
@@ -86,16 +101,21 @@
   transform: translate(50%, -50%);
 }
 
-@media (max-width: 768px) {
-  .bento-hero::before, .bento-hero::after,
-  .bento-services-header::before, .bento-services-header::after,
+@media (width <= 768px) {
+  .bento-hero::before,
+  .bento-hero::after,
+  .bento-services-header::before,
+  .bento-services-header::after,
   .bento-story-left::before,
   .bento-story-right::after,
-  .bento-cta::before, .bento-cta::after,
-  .bento-contact-top::before, .bento-contact-top::after,
+  .bento-cta::before,
+  .bento-cta::after,
+  .bento-contact-top::before,
+  .bento-contact-top::after,
   .bento-contact-right::after,
   .bento-contact-details::before,
-  .bento-footer::before, .bento-footer::after {
+  .bento-footer::before,
+  .bento-footer::after {
     display: none;
   }
 }

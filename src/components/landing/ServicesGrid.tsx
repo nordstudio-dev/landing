@@ -17,7 +17,12 @@ export function ServicesGrid() {
 
       <div className="bento-services-wrap">
         {t.services.items.map((service, i) => (
-          <ServiceCell key={i} icon={serviceIcons[i]} title={service.title} description={service.description} />
+          <ServiceCell
+            key={i}
+            icon={serviceIcons[i]}
+            title={service.title}
+            description={service.description}
+          />
         ))}
       </div>
     </>
