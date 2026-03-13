@@ -32,4 +32,26 @@
   /* Transitions */
   --transition-fast: 0.15s;
   --transition-normal: 0.2s;
+
+  /* Components */
+  --button-color-txt: #fff;
+  --button-color-bg: var(--color-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #121212;
+    --color-surface: #161616;
+    --color-white: #1b1b1b;
+    --color-border: #2c2c2c;
+    --color-border-strong: #3a3a3a;
+    --color-text: #e5e5e5;
+    --color-text-secondary: #aaa;
+    --color-text-tertiary: #777;
+    --color-accent: #fff;
+    --color-accent-hover: #ddd;
+    --color-grid-line: #232323;
+    --color-plus: #666;
+    --button-color-txt: #333;
+  }
 }
