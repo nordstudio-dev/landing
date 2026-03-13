@@ -79,7 +79,7 @@ nav {
 }
 
 .lang-trigger {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.25rem;
   padding: 0;
