@@ -1,5 +1,7 @@
 # Nord Studio — Landing
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb4cde65-41b5-47c4-986e-bae772c381de/deploy-status)](https://app.netlify.com/projects/leafy-rolypoly-2de089/deploys)
+
 Studio landing page built with React, TypeScript, and Vite.
 
 ## Tech Stack
@@ -19,12 +21,12 @@ npm run dev
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start dev server |
-| `npm run build` | Type-check and build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
+| Command           | Description                         |
+| ----------------- | ----------------------------------- |
+| `npm run dev`     | Start dev server                    |
+| `npm run build`   | Type-check and build for production |
+| `npm run preview` | Preview production build            |
+| `npm run lint`    | Run ESLint                          |
 
 ## Project Structure
 
