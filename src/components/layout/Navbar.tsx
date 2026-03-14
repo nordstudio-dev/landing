@@ -12,7 +12,8 @@ export function Navbar({ variant }: NavbarProps) {
   return (
     <nav>
       <div className="nav-inner">
-        <Link to="/" className="logo-text">
+        <Link to="/" className="logo">
+          <img src="/logo.svg" alt="Nord Studio" />
           Nord Studio
         </Link>
 
